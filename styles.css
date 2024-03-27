@@ -1,0 +1,33 @@
+body {
+	background-image: url("coffeebean.png");
+	background-color: #2E2722;
+}
+
+form{
+	padding: 20px;
+  	width: 60vw;
+  	margin: auto;
+  	background: #828282;
+  	color: #FFFFFF;
+}
+
+label {
+	display: block;
+	margin: 0.5rem 0;
+}
+
+div {
+	display: inline;
+}
+
+.inline {
+	display: inline;
+}
+
+.row {
+	display: flex;
+}
+
+.column {
+	flex: 50%;
+}

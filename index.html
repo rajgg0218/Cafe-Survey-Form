@@ -6,13 +6,30 @@
     <title>Feeback Form</title>
     </head>
     <body>
-      <h1 id="title">CAFÉ SURVEY FORM</h1>
-      <p id="description">Thank you for visiting our coffee shop! We truly appreciate your feedback to help us enhance your experience.</p>
-
       <form id="survey-form">
-        <label for="name">Name:</label> <input id="name" type="text" required />
-        <label for="email">Email Address:</label> <input id="email" type="text" required />
-        
+        <h1 id="title">CAFÉ SURVEY FORM</h1>
+        <p id="description">Thank you for visiting our coffee shop! We truly appreciate your feedback to help us enhance your experience.</p>
+
+        <label for="name">Name</label><input id="name-label" type="text" placeholder="Your name" required />
+        <label for="email">Email Address </label><input id="email-label" type="text" placeholder="you@email.com" required  />
+        <label for="dropdown">How often do you visit our coffee shop? </label> 
+        <select name="dropdown" id="dropdown">
+          <option value="daily">Daily</option>
+          <option value="weekly">Weekly</option>
+          <option value="monthly">Monthly</option>
+          <option value="occassionally">Occassionally</option>
+          <option value="first-time">First-time Visitor</option> 
+        </select>
+        <p>Please rate each item on a scale of 1 to 5, where 1 - Strongly Disagree and 5 - "Strongly Agree.</p>
+        <div class="row">
+          <div class="column">
+            <p>(1) Quality of Coffee</p><input id="number-label" type="number" name="number" min="1" max="5">
+          </div>
+          <div class="column">
+            <p>(5) Cleanliness & Ambiance</p><input id="number-label" type="number" name="number" min="1" max="5">
+          </div>
+        </div>
+
       </form>
 
 
